@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require knockout
+//= require jquery.qrcode
+//= require qrcode
 //= require turbolinks
 //= require_tree .

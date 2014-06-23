@@ -1,0 +1,24 @@
+{
+  "name": "snaplogin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/safe-net/monk_auth",
+  "authors": [
+    "lucidtech <chris@safe.net>"
+  ],
+  "description": "dependencies for snaplogin",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "QRCode"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

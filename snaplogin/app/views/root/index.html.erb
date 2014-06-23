@@ -21,4 +21,14 @@
         <br />
         <%= f.submit "Login" %>
     <% end %>
+    <p>Or use your smartphone to scan this code</p>
+    <div id="qrcode">
+        <div id="code"></div>
+        <p data-bind="text: url()"></p>
+        <p data-bind="text: 'auth challenge: ' + challenge()"></p>
+        <button data-bind="click: regenerate"> refresh challenge</button>
+    </div>
 <% end %>
+
+
+
