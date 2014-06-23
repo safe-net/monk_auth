@@ -37,22 +37,22 @@ class QRAuth
     $ @element .empty()
     @getNewChallenge @refresh
 
-  checkForAuthenticated : =>
+  checkForAuthenticated : (u)   ->
 #    @testingCount += 1
 #    if @testingCount >= 3
 #      location.reload()
 #      console.log 'reloaded'
     $.ajax
-      url: @checkAuthURL()
+      url: u
     .done (data) ->
       if data.authenticated
         location.reload()
 
 
 
-  init    : =>
+  init    : ->
     @getNewChallenge @refresh
-    setInterval @checkForAuthenticated, 1000
+    setInterval @checkForAuthenticated @checkAuthURL, 1000
 
 window.QRAuth = QRAuth
 
