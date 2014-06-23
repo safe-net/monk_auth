@@ -9,3 +9,4 @@ xcuserdata/
 *.o
 
 Pods
+node_modules
