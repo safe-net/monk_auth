@@ -16,4 +16,8 @@ class UserSessionsController < ApplicationController
     current_user_session.destroy
     redirect_to root_index_path
   end
+
+  def log_out
+    destroy
+  end
 end

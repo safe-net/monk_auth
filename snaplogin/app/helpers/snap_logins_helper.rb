@@ -1,0 +1,2 @@
+module SnapLoginsHelper
+end

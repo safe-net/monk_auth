@@ -14,7 +14,13 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root 'root#index'
 
-  resources :user_sessions, only: [:new, :create, :destroy]
+  resources :user_sessions, only: [:new, :create, :destroy] do
+    collection do
+      get 'log_out'
+    end
+  end
+
+  resources :snap_logins, only: [:update, :show]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
