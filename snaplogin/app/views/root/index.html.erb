@@ -23,7 +23,7 @@
         <%= f.submit 'Login' %>
     <% end %>
     <%=	 form_for @snap_login do |f| %>
-        <input type="hidden" id="full_url" value="<%= snap_login_url(@snap_login) %>"/>
+        <input type="hidden" id="full_url" value="<%= request.protocol + @local_ip + ':' + request.port.to_s + snap_login_path(@snap_login) %>"/>
         <%= f.label :token %>
         <%=	f.text_field :token %>
         <br />
