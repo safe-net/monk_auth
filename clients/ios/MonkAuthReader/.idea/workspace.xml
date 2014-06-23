@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6dd87400-98ca-4e76-b821-16de39f574db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" afterPath="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" afterPath="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/en.lproj/EmbedReaderViewController.xib" afterPath="$PROJECT_DIR$/EmbedReader/en.lproj/EmbedReaderViewController.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MonkAuthReader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +49,7 @@
       <file leaf-file-name="EmbedReaderViewController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="0" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0" vertical-offset="1145" max-vertical-offset="1650">
+            <state line="91" column="51" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="1725">
               <folding>
                 <element signature="e#91#128#0" expanded="true" />
               </folding>
@@ -75,7 +78,7 @@
       <file leaf-file-name="AuthenticationManager.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="32" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.7029703" vertical-offset="185" max-vertical-offset="1035">
+            <state line="45" column="139" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.3207547" vertical-offset="505" max-vertical-offset="1035">
               <folding>
                 <element signature="e#101#134#0" expanded="true" />
               </folding>
@@ -262,9 +265,9 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1662689" sideWeight="0.31367925" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37146226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1662689" sideWeight="0.3148585" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16328125" sideWeight="0.31958762" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36082473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16328125" sideWeight="0.31958762" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -287,33 +290,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>31</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>44</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>49</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>41</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m</url>
-          <line>45</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="10" />
     </breakpoint-manager>
   </component>
@@ -350,7 +326,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0" vertical-offset="1200" max-vertical-offset="1650">
+        <state line="91" column="51" selection-start="2058" selection-end="2058" vertical-scroll-proportion="0.0" vertical-offset="1100" max-vertical-offset="1725">
           <folding>
             <element signature="e#91#128#0" expanded="true" />
           </folding>
@@ -366,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.7029703" vertical-offset="185" max-vertical-offset="1035">
+        <state line="45" column="139" selection-start="2141" selection-end="2141" vertical-scroll-proportion="0.3207547" vertical-offset="505" max-vertical-offset="1035">
           <folding>
             <element signature="e#101#134#0" expanded="true" />
           </folding>

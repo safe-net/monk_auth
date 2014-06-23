@@ -89,13 +89,18 @@
 {
     // do something useful with results
     for(ZBarSymbol *sym in syms) {
-        resultText.text = sym.data;
+        resultText.text = [NSString stringWithFormat:@"Authenticating to %@", sym.data];
+        resultText.textColor = [UIColor orangeColor];
         [[self.authenticationManager authenticate:sym.data] subscribeNext:^(id x) {
             // ?
         } error:^(NSError *error) {
             // Show error message...
+            resultText.text = @"Authentication Failed";
+            resultText.textColor = [UIColor redColor];
         } completed:^{
             // Show success message...
+            resultText.text = @"Success";
+            resultText.textColor = [UIColor blackColor];
         }];
         break;
     }
