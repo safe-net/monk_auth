@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QRAuthentication</title>
+    <meta content="template language" name="keywords" />
+    <meta name="SafeNet Labs" />
+    <link href="favicon.png" rel="icon" type="image/png" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.qrcode.js"></script>
+    <script src="js/qrcode.js"></script>
+    <script src="js/knockout-latest.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <h1>
+      Here is the QR Code v2
+    </h1>
+    <div id="qrcode">
+      <div id="code"></div>
+      <p data-bind="text: &#39;http://someulr/&#39; + url()"></p>
+      <p data-bind="text: &#39;auth challenge: &#39; + challenge()"></p>
+      <button data-bind="click: regenerate">refresh challenge</button>
+    </div>
+    <div id="footer">
+      Copyright &copy; SafeNet Labs
+    </div>
+  </body>
+</html>
