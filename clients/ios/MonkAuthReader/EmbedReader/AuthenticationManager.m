@@ -14,6 +14,14 @@
 
 @implementation AuthenticationManager
 
+-(id)init {
+    [super init];
+    self.responseSerializer = [AFJSONResponseSerializer serializer];
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
+    [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    return self;
+}
+
 -(RACSignal *)authenticate:(NSString *)url {
     return [self enqueueRequestWithMethod: @"POST" path:url parameters:@{}];
 }
