@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>390F246C-8E7C-4CB6-88EA-C490FADC2376</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EmbedReader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8C4B1D31-A132-46A7-9A77-ABE6A5DBCFDA</key>
+		<string>ssh://github.com/james-fitzgerald/monk_auth.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>clients/Examples/EmbedReader/EmbedReader.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8C4B1D31-A132-46A7-9A77-ABE6A5DBCFDA</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/james-fitzgerald/monk_auth.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C4B1D31-A132-46A7-9A77-ABE6A5DBCFDA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C4B1D31-A132-46A7-9A77-ABE6A5DBCFDA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>monk_auth</string>
+		</dict>
+	</array>
+</dict>
+</plist>
