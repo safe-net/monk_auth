@@ -16,11 +16,11 @@ class QRAuth
 
 
   constructor:  ->
-    @element    = $('#code')
-    @url        = ko.observable location.href
-    @challenge  = ko.observable null
-    @qrcode     = ko.observable null
-    @testingCount = 0
+    @element      = $('#code')
+    @url          = ko.observable location.href
+    @challenge    = ko.observable null
+    @qrcode       = ko.observable null
+    @checkAuthURL = @url()+'/verify.json'
     @init()
 
 
@@ -43,10 +43,10 @@ class QRAuth
 #      location.reload()
 #      console.log 'reloaded'
     $.ajax
-      url: location.href
-      .done (data) ->
-        if data.authenticated
-          location.reload()
+      url: @checkAuthURL()
+    .done (data) ->
+      if data.authenticated
+        location.reload()
 
 
 
