@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :snap_logins, only: [:update, :show]
+  resources :snap_logins, only: [:update, :show, :destroy]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

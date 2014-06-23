@@ -14,4 +14,9 @@ class SnapLoginsController < ApplicationController
   end
 
 
+  def destroy
+    @snap_login = SnapLogin.find_by_token(params[:id])
+    @snap_login.destroy
+    render json: {ok: 'yeah'}
+  end
 end

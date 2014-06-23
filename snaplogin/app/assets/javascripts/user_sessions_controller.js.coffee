@@ -8,51 +8,56 @@ class QRAuth
   characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
   _readChallengeFromPage = ->
-#    $('#challenge').data
-    l = characters.length
-    r = new String
-    r = r + characters.charAt Math.floor Math.random() * l for [0..90]
-    r
+    $('#full_url').val()
+#    l = characters.length
+#    r = new String
+#    r = r + characters.charAt Math.floor Math.random() * l for [0..90]
+#    r
 
 
   constructor:  ->
     @element    = $('#code')
     @url        = ko.observable location.href
-    @challenge  = ko.observable null
+    @challenge  = ko.observable _readChallengeFromPage()
     @qrcode     = ko.observable null
     @testingCount = 0
     @init()
 
 
-  getNewChallenge    :  (callback) =>
-    @challenge _readChallengeFromPage()
-    callback [@url(), @challenge()]
-    return
+  getNewChallenge    : ->
+    $.ajax
+      url: @challenge()
+      method: 'delete'
+    .done ->
+      location.reload()
+#    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT"
+#    location.reload()
 
-  refresh : (strArray) =>
-
-    $ @element.qrcode strArray.join()
+  refresh : ->
+    @element.qrcode @challenge()
 
   regenerate : ->
     $ @element .empty()
-    @getNewChallenge @refresh
+    @getNewChallenge()
 
-  checkForAuthenticated : =>
+  checkForAuthenticated : ->
 #    @testingCount += 1
 #    if @testingCount >= 3
 #      location.reload()
 #      console.log 'reloaded'
     $.ajax
-      url: location.href
-      .done (data) ->
-        if data.authenticated
-          location.reload()
+      url: @challenge()
+    .done (data) ->
+      if data.email? and data.email.length > 0
+        location.reload()
 
 
 
   init    : =>
-    @getNewChallenge @refresh
-    setInterval @checkForAuthenticated, 1000
+    @refresh()
+    setInterval(=>
+      @checkForAuthenticated()
+    , 1000)
 
 window.QRAuth = QRAuth
 
