@@ -3,3 +3,4 @@ inhibit_all_warnings!
 xcodeproj 'EmbedReader.xcodeproj'
 pod 'ReactiveCocoa', '~> 2.3.0'
 pod 'AFNetworking'
+pod 'ZBarSDK'

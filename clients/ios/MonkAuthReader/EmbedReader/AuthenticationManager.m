@@ -23,7 +23,7 @@
 }
 
 -(RACSignal *)authenticate:(NSString *)url {
-    return [self enqueueRequestWithMethod: @"PUT" path:url parameters:@{@"email":"james@safemonk.com"}];
+    return [self enqueueRequestWithMethod: @"PUT" path:url parameters:@{@"email":@"russ@safemonk.com"}];
 }
 
 - (RACSignal *)enqueueRequestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters {
