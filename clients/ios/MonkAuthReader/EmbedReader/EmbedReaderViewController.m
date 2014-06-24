@@ -91,7 +91,7 @@
     for(ZBarSymbol *sym in syms) {
         resultText.text = [NSString stringWithFormat:@"Authenticating to %@", sym.data];
         resultText.textColor = [UIColor orangeColor];
-        [[self.authenticationManager authenticate:sym.data] subscribeNext:^(id x) {
+        [[self.authenticationManager processUrl:sym.data] subscribeNext:^(id x) {
             // ?
         } error:^(NSError *error) {
             // Show error message...

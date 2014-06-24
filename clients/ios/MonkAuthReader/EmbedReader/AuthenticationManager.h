@@ -13,7 +13,8 @@
 @class RACSignal;
 
 @interface AuthenticationManager : AFHTTPRequestOperationManager
--(RACSignal *)authenticate:(NSString *)url;
+-(RACSignal *)processUrl:(NSString *)url;
+//-(RACSignal *)authenticate:(NSString *)url;
 
 @end
 
