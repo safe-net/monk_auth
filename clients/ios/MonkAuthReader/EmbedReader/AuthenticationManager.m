@@ -37,17 +37,18 @@
 -(RACSignal *)processUrl:(NSString *)url {
     // TODO: Extract the otc and sign it
     // Push up the signed otc + pub key etc...
-
+    
     NSString *signedMessage = [_userKeyPair sign:url];
-
-
-    return [self enqueueRequestWithMethod: @"PUT" path:url parameters:@{@"email":@"james@safemonk.com"}];
+    NSString *publicKey = [_userKeyPair exportPublicKey];
+    
+    return [self enqueueRequestWithMethod: @"PUT" path:url
+                               parameters:@{@"signature":signedMessage, @"public_key":publicKey, @"device_name":_deviceName}];
 }
 
 - (RACSignal *)enqueueRequestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters {
 
         return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
-            NSDictionary *local_parameters = parameters; // == nil; //? self.defaultParams : [self.defaultParams sdn_merge:parameters];
+            NSDictionary *local_parameters = parameters;
         NSError *serializationError = nil;
         NSMutableURLRequest *request = [self.requestSerializer requestWithMethod:method
                                                                        URLString:path

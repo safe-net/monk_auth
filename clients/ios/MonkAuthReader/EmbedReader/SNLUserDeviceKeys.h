@@ -9,4 +9,5 @@
 @property SecKeyRef publicKey;
 @property SecKeyRef privateKey;
 -(NSString *)sign:(NSString *)message;
+-(NSString *)exportPublicKey;
 @end
