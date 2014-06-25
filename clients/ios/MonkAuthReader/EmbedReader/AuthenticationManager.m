@@ -12,9 +12,12 @@
 #import "AFNetworking.h"
 #import "RACDisposable.h"
 #import "SNLUserDeviceKeys.h"
+#import "DeviceId.h"
 
 @interface AuthenticationManager ()
 @property SNLUserDeviceKeys *userKeyPair;
+@property NSString *deviceId;
+@property NSString *deviceName;
 @end
 
 @implementation AuthenticationManager
@@ -25,6 +28,9 @@
     self.requestSerializer = [AFJSONRequestSerializer serializer];
     [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     _userKeyPair = [[SNLUserDeviceKeys alloc] init];
+    DeviceId *dev = [[DeviceId alloc] init];
+    _deviceId = [dev getUniqueDeviceIdentifierAsString];
+    _deviceName = [dev getDeviceName];
     return self;
 }
 

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D2730D6195A28C100AAA4A3 /* SNLUserDeviceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2730D5195A28C100AAA4A3 /* SNLUserDeviceKeys.m */; };
 		1D702F6619588048007A98AF /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D702F6519588048007A98AF /* AuthenticationManager.m */; };
 		4D1E245BB97044EB8E8159A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1439B64EF3BC473184B6BCB2 /* libPods.a */; };
+		50498EB9195B24EE007ED8E2 /* DeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 50498EB8195B24EE007ED8E2 /* DeviceId.m */; };
+		661C939D687DFA367F02A444 /* SNLUserDeviceKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C9225A6865A21E4FE7DDC /* SNLUserDeviceKeys.m */; };
 		DCFB4494136F7202004B3EE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4493136F7202004B3EE0 /* UIKit.framework */; };
 		DCFB4496136F7202004B3EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4495136F7202004B3EE0 /* Foundation.framework */; };
 		DCFB4498136F7202004B3EE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4497136F7202004B3EE0 /* CoreGraphics.framework */; };
@@ -28,10 +29,12 @@
 
 /* Begin PBXFileReference section */
 		1439B64EF3BC473184B6BCB2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D2730D4195A28C100AAA4A3 /* SNLUserDeviceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLUserDeviceKeys.h; sourceTree = "<group>"; };
-		1D2730D5195A28C100AAA4A3 /* SNLUserDeviceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLUserDeviceKeys.m; sourceTree = "<group>"; };
 		1D702F6419588048007A98AF /* AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationManager.h; sourceTree = "<group>"; };
 		1D702F6519588048007A98AF /* AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationManager.m; sourceTree = "<group>"; };
+		50498EB7195B24EE007ED8E2 /* DeviceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceId.h; sourceTree = "<group>"; };
+		50498EB8195B24EE007ED8E2 /* DeviceId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceId.m; sourceTree = "<group>"; };
+		661C9225A6865A21E4FE7DDC /* SNLUserDeviceKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNLUserDeviceKeys.m; sourceTree = "<group>"; };
+		661C953510219FFC31E8857D /* SNLUserDeviceKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNLUserDeviceKeys.h; sourceTree = "<group>"; };
 		AFBD289F01A04A059DE61C24 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DCFB448F136F7202004B3EE0 /* EmbedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFB4493136F7202004B3EE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -111,8 +114,6 @@
 		DCFB4499136F7202004B3EE0 /* EmbedReader */ = {
 			isa = PBXGroup;
 			children = (
-				1D2730D4195A28C100AAA4A3 /* SNLUserDeviceKeys.h */,
-				1D2730D5195A28C100AAA4A3 /* SNLUserDeviceKeys.m */,
 				DCFB44A2136F7203004B3EE0 /* EmbedReaderAppDelegate.h */,
 				DCFB44A3136F7203004B3EE0 /* EmbedReaderAppDelegate.m */,
 				DCFB44A5136F7203004B3EE0 /* MainWindow.xib */,
@@ -122,6 +123,10 @@
 				DCFB449A136F7202004B3EE0 /* Supporting Files */,
 				1D702F6419588048007A98AF /* AuthenticationManager.h */,
 				1D702F6519588048007A98AF /* AuthenticationManager.m */,
+				50498EB7195B24EE007ED8E2 /* DeviceId.h */,
+				50498EB8195B24EE007ED8E2 /* DeviceId.m */,
+				661C9225A6865A21E4FE7DDC /* SNLUserDeviceKeys.m */,
+				661C953510219FFC31E8857D /* SNLUserDeviceKeys.h */,
 			);
 			path = EmbedReader;
 			sourceTree = "<group>";
@@ -166,11 +171,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				TargetAttributes = {
-					DCFB448E136F7202004B3EE0 = {
-						DevelopmentTeam = 7NYG7J2MP4;
-					};
-				};
 			};
 			buildConfigurationList = DCFB4489136F7202004B3EE0 /* Build configuration list for PBXProject "EmbedReader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -241,10 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFB44A1136F7203004B3EE0 /* main.m in Sources */,
-				1D2730D6195A28C100AAA4A3 /* SNLUserDeviceKeys.m in Sources */,
+				50498EB9195B24EE007ED8E2 /* DeviceId.m in Sources */,
 				1D702F6619588048007A98AF /* AuthenticationManager.m in Sources */,
 				DCFB44A4136F7203004B3EE0 /* EmbedReaderAppDelegate.m in Sources */,
 				DCFB44AA136F7203004B3EE0 /* EmbedReaderViewController.m in Sources */,
+				661C939D687DFA367F02A444 /* SNLUserDeviceKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,8 +315,6 @@
 			baseConfigurationReference = AFBD289F01A04A059DE61C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -327,7 +326,6 @@
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
@@ -339,8 +337,6 @@
 			baseConfigurationReference = AFBD289F01A04A059DE61C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmbedReader/EmbedReader-Prefix.pch";
@@ -351,7 +347,6 @@
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALIDATE_PRODUCT = YES;
