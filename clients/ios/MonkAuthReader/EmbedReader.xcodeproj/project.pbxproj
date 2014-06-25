@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D702F6619588048007A98AF /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D702F6519588048007A98AF /* AuthenticationManager.m */; };
 		4D1E245BB97044EB8E8159A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1439B64EF3BC473184B6BCB2 /* libPods.a */; };
+		50498EB9195B24EE007ED8E2 /* DeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 50498EB8195B24EE007ED8E2 /* DeviceId.m */; };
 		DCFB4494136F7202004B3EE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4493136F7202004B3EE0 /* UIKit.framework */; };
 		DCFB4496136F7202004B3EE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4495136F7202004B3EE0 /* Foundation.framework */; };
 		DCFB4498136F7202004B3EE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFB4497136F7202004B3EE0 /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 		1439B64EF3BC473184B6BCB2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D702F6419588048007A98AF /* AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationManager.h; sourceTree = "<group>"; };
 		1D702F6519588048007A98AF /* AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationManager.m; sourceTree = "<group>"; };
+		50498EB7195B24EE007ED8E2 /* DeviceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceId.h; sourceTree = "<group>"; };
+		50498EB8195B24EE007ED8E2 /* DeviceId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceId.m; sourceTree = "<group>"; };
 		AFBD289F01A04A059DE61C24 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DCFB448F136F7202004B3EE0 /* EmbedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmbedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFB4493136F7202004B3EE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				DCFB449A136F7202004B3EE0 /* Supporting Files */,
 				1D702F6419588048007A98AF /* AuthenticationManager.h */,
 				1D702F6519588048007A98AF /* AuthenticationManager.m */,
+				50498EB7195B24EE007ED8E2 /* DeviceId.h */,
+				50498EB8195B24EE007ED8E2 /* DeviceId.m */,
 			);
 			path = EmbedReader;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFB44A1136F7203004B3EE0 /* main.m in Sources */,
+				50498EB9195B24EE007ED8E2 /* DeviceId.m in Sources */,
 				1D702F6619588048007A98AF /* AuthenticationManager.m in Sources */,
 				DCFB44A4136F7203004B3EE0 /* EmbedReaderAppDelegate.m in Sources */,
 				DCFB44AA136F7203004B3EE0 /* EmbedReaderViewController.m in Sources */,
