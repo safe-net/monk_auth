@@ -5,12 +5,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface UserDeviceKeys : NSObject
+@interface SNLUserDeviceKeys : NSObject
 @property SecKeyRef publicKey;
 @property SecKeyRef privateKey;
 
 -(void)generateKeyPair;
--(void)loadKeyPair;
+-(BOOL)loadKeyPair;
 -(void)saveKeyPair;
 
 
