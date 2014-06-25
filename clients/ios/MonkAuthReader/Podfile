@@ -2,7 +2,7 @@
 inhibit_all_warnings!
 xcodeproj 'EmbedReader.xcodeproj'
 pod 'ReactiveCocoa', '~> 2.3.0'
-pod 'AFNetworking'
+pod 'AFNetworking', '~> 2.0'
 pod 'ZBarSDK'
 pod 'Mantle'
 pod 'SSKeychain'
