@@ -38,6 +38,9 @@
     // TODO: Extract the otc and sign it
     // Push up the signed otc + pub key etc...
 
+    NSString *signedMessage = [_userKeyPair sign:url];
+
+
     return [self enqueueRequestWithMethod: @"PUT" path:url parameters:@{@"email":@"james@safemonk.com"}];
 }
 

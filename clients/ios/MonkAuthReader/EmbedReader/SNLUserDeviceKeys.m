@@ -3,7 +3,8 @@
 //
 
 #import "SNLUserDeviceKeys.h"
-
+#import <CommonCrypto/CommonDigest.h>
+//#import <SecSignVerifyTransform.h>
 
 @interface SNLUserDeviceKeys ()
 @property NSString *pubKeyIdentifier;
@@ -86,20 +87,22 @@
     [publicKeyAttr setObject:@YES forKey:(id)kSecReturnRef];
     status = SecItemCopyMatching(publicKeyAttr, &_publicKey);
     return status == noErr;
-
-//    [queryPublicKey setObject:(__bridge_transfer id)kSecClassKey forKey:(__bridge_transfer id)kSecClass];
-//
-//    [queryPublicKey setObject:publicTag forKey:(__bridge_transfer id)kSecAttrApplicationTag];
-//    [queryPublicKey setObject:(__bridge_transfer id)kSecAttrKeyTypeRSA forKey:(__bridge_transfer id)kSecAttrKeyType];
-//    [queryPublicKey setObject:[NSNumber numberWithBool:YES] forKey:(__bridge_transfer id)kSecReturnData];
-
-
 }
 
--(void)saveKeyPair {
-    // TODO...  I believe SegGenKeyPair puts it in the key chain
-    // Put it in the key chain
-    //NSMutableDictionary *
+-(NSString *)sign:(NSString *)message {
+    // Hash the message using SHA-256
+    NSData *messageData = [message dataUsingEncoding:NSUTF8StringEncoding];
+    NSMutableData *hashOut = [NSMutableData dataWithLength:CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256(messageData.bytes, messageData.length,  hashOut.mutableBytes);
+    size_t sigLen = 0;
+    OSStatus status = SecKeyRawSign(_privateKey, kSecPaddingPKCS1, hashOut.mutableBytes, hashOut.length, nil, &sigLen);
+    NSMutableData *sigOut = [NSMutableData dataWithLength:sigLen];
+    status = SecKeyRawSign(_privateKey, kSecPaddingPKCS1, hashOut.mutableBytes, hashOut.length, sigOut.mutableBytes, &sigLen);
+
+    // TODO: Convert to a string...
+
+    return nil;
 }
+
 
 @end

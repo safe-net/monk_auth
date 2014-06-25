@@ -8,10 +8,5 @@
 @interface SNLUserDeviceKeys : NSObject
 @property SecKeyRef publicKey;
 @property SecKeyRef privateKey;
-
--(void)generateKeyPair;
--(BOOL)loadKeyPair;
--(void)saveKeyPair;
-
-
+-(NSString *)sign:(NSString *)message;
 @end
