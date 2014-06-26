@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D57C78B195C931700E76D0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D57C78A195C931700E76D0B /* Default-568h@2x.png */; };
 		1D702F6619588048007A98AF /* AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D702F6519588048007A98AF /* AuthenticationManager.m */; };
 		4D1E245BB97044EB8E8159A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1439B64EF3BC473184B6BCB2 /* libPods.a */; };
 		50498EB9195B24EE007ED8E2 /* DeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 50498EB8195B24EE007ED8E2 /* DeviceId.m */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1439B64EF3BC473184B6BCB2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D57C78A195C931700E76D0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1D702F6419588048007A98AF /* AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationManager.h; sourceTree = "<group>"; };
 		1D702F6519588048007A98AF /* AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationManager.m; sourceTree = "<group>"; };
 		50498EB7195B24EE007ED8E2 /* DeviceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceId.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		DCFB4484136F7202004B3EE0 = {
 			isa = PBXGroup;
 			children = (
+				1D57C78A195C931700E76D0B /* Default-568h@2x.png */,
 				DCFB4499136F7202004B3EE0 /* EmbedReader */,
 				DCFB4492136F7202004B3EE0 /* Frameworks */,
 				DCFB4490136F7202004B3EE0 /* Products */,
@@ -171,6 +174,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					DCFB448E136F7202004B3EE0 = {
+						DevelopmentTeam = 7NYG7J2MP4;
+					};
+				};
 			};
 			buildConfigurationList = DCFB4489136F7202004B3EE0 /* Build configuration list for PBXProject "EmbedReader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFB449E136F7203004B3EE0 /* InfoPlist.strings in Resources */,
+				1D57C78B195C931700E76D0B /* Default-568h@2x.png in Resources */,
 				DCFB44A7136F7203004B3EE0 /* MainWindow.xib in Resources */,
 				DCFB44AD136F7203004B3EE0 /* EmbedReaderViewController.xib in Resources */,
 			);
@@ -315,6 +324,8 @@
 			baseConfigurationReference = AFBD289F01A04A059DE61C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -326,6 +337,7 @@
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
@@ -337,6 +349,8 @@
 			baseConfigurationReference = AFBD289F01A04A059DE61C24 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EmbedReader/EmbedReader-Prefix.pch";
@@ -347,6 +361,7 @@
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				VALIDATE_PRODUCT = YES;
