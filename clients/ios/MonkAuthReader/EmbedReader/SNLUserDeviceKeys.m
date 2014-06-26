@@ -53,9 +53,9 @@
     [keyPairAttr setObject:publicKeyAttr forKey:(id)kSecPublicKeyAttrs];
     OSStatus status = SecKeyGeneratePair((CFDictionaryRef)keyPairAttr, &_publicKey, &_privateKey);
 
-    // Put it in the key chain while we are here
-    //[self saveKeyPair];
-
+    if (status != noErr) {
+        NSLog(@"Failed to generate users key pair!");
+    }
 }
 
 -(BOOL)loadKeyPair {
@@ -70,7 +70,7 @@
     [privateKeyAttr setObject:(id)kSecAttrKeyTypeRSA forKey:(id)kSecAttrKeyType];
     [privateKeyAttr setObject:@YES forKey:(id)kSecReturnRef];
 
-    OSStatus status = SecItemCopyMatching(privateKeyAttr, &_privateKey);
+    OSStatus status = SecItemCopyMatching((CFTypeRef)privateKeyAttr, (CFTypeRef*)&_privateKey);
 
     if (status == errSecItemNotFound) {
         NSLog(@"Key does not yet exit we will have to generate it");
@@ -85,7 +85,7 @@
     [publicKeyAttr setObject:publicTag forKey:(id)kSecAttrApplicationTag];
     [publicKeyAttr setObject:(id)kSecAttrKeyTypeRSA forKey:(id)kSecAttrKeyType];
     [publicKeyAttr setObject:@YES forKey:(id)kSecReturnRef];
-    status = SecItemCopyMatching(publicKeyAttr, &_publicKey);
+    status = SecItemCopyMatching((CFTypeRef)publicKeyAttr, (CFTypeRef*)&_publicKey);
     return status == noErr;
 }
 

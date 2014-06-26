@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="EmbedReader" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="EmbedReader" PROJECT_NAME="EmbedReader" TARGET_NAME="EmbedReader" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="EmbedReader" RUN_TARGET_NAME="EmbedReader" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+  <configuration default="false" name="EmbedReader" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="EmbedReader" PROJECT_NAME="EmbedReader" TARGET_NAME="SnapLogin" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="EmbedReader" RUN_TARGET_NAME="SnapLogin" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
     <envs />
     <RunnerSettings RunnerId="AppRunner" />
     <ConfigurationWrapper RunnerId="AppRunner" />
