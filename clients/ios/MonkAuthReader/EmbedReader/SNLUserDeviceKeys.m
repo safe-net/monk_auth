@@ -109,7 +109,7 @@
     // Convert to a string...
     NSString *base64String = [self base64forData:sigOut];
     //NSLog(@"%@", base64String);
-
+    //NSString *base64String = [sigOut base64EncodedStringWithOptions:0];
     return base64String;
 }
 
