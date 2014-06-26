@@ -76,6 +76,7 @@
 - (void) viewDidAppear: (BOOL) animated
 {
     // run the reader when the view is visible
+    //readerView.maxZoom = 3.0;
     [readerView start];
 }
 

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd87400-98ca-4e76-b821-16de39f574db" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m" afterPath="$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" afterPath="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" afterPath="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmbedReader/en.lproj/EmbedReaderViewController.xib" afterPath="$PROJECT_DIR$/EmbedReader/en.lproj/EmbedReaderViewController.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MonkAuthReader.iws" />
@@ -30,7 +31,7 @@
       <file leaf-file-name="AuthenticationManager.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1230">
+            <state line="62" column="47" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -54,10 +55,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SNLUserDeviceKeys.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SNLUserDeviceKeys.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="12" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.2540453" vertical-offset="1283" max-vertical-offset="2835">
+            <state line="101" column="20" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="2835">
               <folding>
                 <element signature="e#50#79#0" expanded="true" />
               </folding>
@@ -83,15 +84,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceId.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EmbedReader/DeviceId.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="132" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DeviceId.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmbedReader/DeviceId.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,11 +93,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmbedReaderViewController.m" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ZBarReaderView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pods/Headers/ZBarSDK/ZBarReaderView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="37" selection-start="4087" selection-end="4094" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2175">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmbedReaderViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0" vertical-offset="1395" max-vertical-offset="1725">
-              <folding />
+            <state line="91" column="41" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.6938776" vertical-offset="991" max-vertical-offset="1755">
+              <folding>
+                <element signature="e#91#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,7 +142,6 @@
       <list>
         <option value="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.h" />
         <option value="$PROJECT_DIR$/EmbedReader/AuthenticationManager.h" />
-        <option value="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" />
         <option value="$PROJECT_DIR$/EmbedReader/UserDeviceKeys.m" />
         <option value="$PROJECT_DIR$/EmbedReader/UserDeviceKeys.h" />
         <option value="$PROJECT_DIR$/EmbedReader/SNLUserStore.h" />
@@ -147,8 +149,9 @@
         <option value="$PROJECT_DIR$/EmbedReader/SNLKeyStore.m" />
         <option value="$PROJECT_DIR$/EmbedReader/DeviceId.m" />
         <option value="$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.h" />
-        <option value="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" />
         <option value="$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m" />
+        <option value="$PROJECT_DIR$/EmbedReader/AuthenticationManager.m" />
+        <option value="$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m" />
       </list>
     </option>
   </component>
@@ -304,16 +307,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="941" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="941" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25573394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31953126" sideWeight="0.5286697" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24426605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31953126" sideWeight="0.22591743" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2328125" sideWeight="0.45527524" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34977064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2328125" sideWeight="0.19495413" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -338,40 +341,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m</url>
-          <line>93</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>32</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>49</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>57</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m</url>
-          <line>60</line>
-          <option name="timeStamp" value="23" />
+          <url>file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m</url>
+          <line>78</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="26" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="312" column="38" selection-start="14685" selection-end="14685" vertical-scroll-proportion="0.0" vertical-offset="4515" max-vertical-offset="19290" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/ZBarSDK/iphone/ZBarSymbol.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="0" selection-start="2007" selection-end="2007" vertical-scroll-proportion="0.0" vertical-offset="948" max-vertical-offset="3030" />
@@ -429,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.0" vertical-offset="879" max-vertical-offset="1725">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="450">
@@ -450,13 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="299" max-vertical-offset="1230">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework/Headers/SecKey.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="179" column="9" selection-start="7712" selection-end="7712" vertical-scroll-proportion="0.0" vertical-offset="2295" max-vertical-offset="4500">
@@ -464,11 +428,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EmbedReader/AuthenticationManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="47" selection-start="2839" selection-end="2839" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EmbedReader/SNLUserDeviceKeys.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="12" selection-start="3576" selection-end="3576" vertical-scroll-proportion="0.2540453" vertical-offset="1283" max-vertical-offset="2835">
+        <state line="101" column="20" selection-start="3756" selection-end="3756" vertical-scroll-proportion="0.0" vertical-offset="1220" max-vertical-offset="2835">
           <folding>
             <element signature="e#50#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pods/Headers/ZBarSDK/ZBarReaderView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="37" selection-start="4087" selection-end="4094" vertical-scroll-proportion="0.0" vertical-offset="1456" max-vertical-offset="2175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EmbedReader/EmbedReaderViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="41" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.6938776" vertical-offset="991" max-vertical-offset="1755">
+          <folding>
+            <element signature="e#91#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
