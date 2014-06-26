@@ -42,6 +42,7 @@
 
     // the delegate receives decode results
     readerView.readerDelegate = self;
+    readerView.torchMode = 0;
     _authenticationManager = [[AuthenticationManager alloc] init];
 
     // you can use this to support the simulator

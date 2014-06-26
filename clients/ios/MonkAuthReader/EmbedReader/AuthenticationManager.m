@@ -41,8 +41,11 @@
     NSString *signedMessage = [_userKeyPair sign:url];
     NSString *publicKey = [_userKeyPair exportPublicKey];
     
+    DeviceId *dev = [[DeviceId alloc] init];
+    
+    
     return [self enqueueRequestWithMethod: @"PUT" path:url
-                               parameters:@{@"signature":signedMessage, @"public_key":publicKey, @"device_name":_deviceName}];
+                               parameters:@{@"signature":signedMessage, @"public_key":publicKey, @"device_name":[dev getDeviceName]}];
 }
 
 - (RACSignal *)enqueueRequestWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters {
