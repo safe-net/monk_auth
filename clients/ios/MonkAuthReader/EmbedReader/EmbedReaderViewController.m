@@ -101,8 +101,8 @@
             resultText.textColor = [UIColor redColor];
         } completed:^{
             // Show success message...
-            resultText.text = @"Success";
-            resultText.textColor = [UIColor blackColor];
+            resultText.text = @"Authentication Successful";
+            resultText.textColor = [UIColor colorWithRed:0.5 green:1.0 blue:0.5 alpha:1.0];
         }];
         break;
     }

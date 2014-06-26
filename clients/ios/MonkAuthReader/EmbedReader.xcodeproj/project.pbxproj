@@ -148,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCFB448E136F7202004B3EE0 /* EmbedReader */ = {
+		DCFB448E136F7202004B3EE0 /* SnapLogin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCFB44B0136F7203004B3EE0 /* Build configuration list for PBXNativeTarget "EmbedReader" */;
+			buildConfigurationList = DCFB44B0136F7203004B3EE0 /* Build configuration list for PBXNativeTarget "SnapLogin" */;
 			buildPhases = (
 				85B8B62401334E43AB3BA3D0 /* Check Pods Manifest.lock */,
 				DCFB448B136F7202004B3EE0 /* Sources */,
@@ -162,7 +162,7 @@
 			);
 			dependencies = (
 			);
-			name = EmbedReader;
+			name = SnapLogin;
 			productName = EmbedReader;
 			productReference = DCFB448F136F7202004B3EE0 /* EmbedReader.app */;
 			productType = "com.apple.product-type.application";
@@ -192,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCFB448E136F7202004B3EE0 /* EmbedReader */,
+				DCFB448E136F7202004B3EE0 /* SnapLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -332,6 +332,7 @@
 				GCC_PREFIX_HEADER = "EmbedReader/EmbedReader-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "EmbedReader/EmbedReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -356,6 +357,7 @@
 				GCC_PREFIX_HEADER = "EmbedReader/EmbedReader-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "EmbedReader/EmbedReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -381,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCFB44B0136F7203004B3EE0 /* Build configuration list for PBXNativeTarget "EmbedReader" */ = {
+		DCFB44B0136F7203004B3EE0 /* Build configuration list for PBXNativeTarget "SnapLogin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCFB44B1136F7203004B3EE0 /* Debug */,
